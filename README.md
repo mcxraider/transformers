@@ -13,24 +13,13 @@ This project is a deep dive into understanding how Transformers work by implemen
 - **Optimize for efficiency**: Memory usage, training speed, and inference performance
 - **Build intuition**: Through visualization, ablation studies, and experimentation
 
-## 🚀 Current Status
 
-### ✅ Completed
-- [ ] Repository setup and project structure
-- [ ] Base Transformer components
-- [ ] Basic training pipeline
-- [ ] Initial documentation
-
-### 🔄 In Progress
-- [ ] Multi-head attention mechanism
-- [ ] Positional encoding implementations
-- [ ] Layer normalization
-
-### 📋 Planned
-- [ ] Complete base transformer
-- [ ] Model variants (GPT, BERT)
-- [ ] Enhancement implementations
-- [ ] Performance benchmarking
+### Starting with:
+1. Flash Attention for memory efficiency
+2. RoPE for better position encoding
+3. RMSNorm for simpler normalization
+4. Pre-norm architecture
+5. SwiGLU activation in the FFN
 
 ## 🏗️ Architecture Overview
 
@@ -56,6 +45,7 @@ Transformer
 
 ### Attention Mechanisms
 - **Flash Attention** - Memory-efficient attention computation
+- **Flash Attention 2** - Further optimized parallelism and speed
 - **Multi-Query Attention (MQA)** - Shared key/value heads for faster inference
 - **Grouped-Query Attention (GQA)** - Balance between MQA and standard attention
 - **Linear Attention** - Linear complexity alternatives to quadratic attention
